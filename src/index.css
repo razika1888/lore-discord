@@ -1,0 +1,90 @@
+:root {
+  /* paleta do tema escuro do Discord */
+  --fundo: #000;
+  --fundo-aside: #070707;
+  --fundo-codigo: #1e1f22;
+  --hover: #35373c;
+  --selecionado: #404249;
+  --borda: #3f4147;
+  --texto: #dbdee1;
+  --texto-titulo: #f2f3f5;
+  --texto-mudo: #949ba4; /* cinza mais escuro: usado no "-#" */
+  --citacao-barra: #4e5058;
+  --blurple: #5865f2;
+
+  /* nomes usados pela sidebar */
+  --fundo-sidebar: var(--fundo-aside);
+  --superficie-hover: var(--hover);
+  --texto-principal: var(--texto);
+  --texto-secundario: #b5bac1;
+  --texto-muted: var(--texto-mudo);
+}
+
+* { box-sizing: border-box; }
+
+html { color-scheme: dark; }
+
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+:focus-visible { outline: 2px solid var(--blurple); outline-offset: 1px; }
+
+/* `texto` em código, como no Discord */
+code {
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", monospace;
+  font-size: 0.875em;
+  font-weight: 400;
+  padding: 0.1em 0.35em;
+  background: var(--fundo-aside);
+  border: 1px solid var(--fundo-codigo);
+  border-radius: 4px;
+}
+
+/* ---------- layout ---------- */
+.app { display: flex; min-height: 100vh; }
+.conteudo { flex: 1; min-width: 0; }
+.conteudo__coluna { max-width: 780px; margin: 0 auto; padding: 40px 40px 140px; }
+
+[data-nav] { scroll-margin-top: 24px; }
+
+@media (max-width: 760px) {
+  .app { flex-direction: column; }
+  .conteudo__coluna { padding: 24px 16px 100px; }
+}
+
+/* ---------- escrita ---------- */
+/* ">"  -> <blockquote className="citacao"> */
+.citacao {
+  margin: 8px 0;
+  padding: 0 8px 0 12px;
+  border-left: 4px solid var(--citacao-barra);
+  border-radius: 4px 0 0 4px;
+}
+
+/* "-#" -> <p className="sub"> : 14px e cinza mais escuro */
+.sub {
+  margin: 0;
+  font-size: 14px;
+  color: var(--texto-mudo);
+}
+.sub + .sub { margin-top: 6px; }
+.sub strong { font-weight: 700; }
+
+/* texto normal */
+.conteudo p { margin: 8px 0; }
+.conteudo .sub { margin: 0; }
+.conteudo .sub + .sub { margin-top: 6px; }

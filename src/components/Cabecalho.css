@@ -1,0 +1,45 @@
+.cabecalho {
+  margin: 0 0 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--borda); /* substitui o ▬▬▬▬▬ */
+}
+.cabecalho:not(:first-child) {
+  margin-top: 72px;
+}
+
+.cabecalho__titulo {
+  margin: 0;
+  padding-left: 1.5rem; /* substitui os "ㅤㅤㅤ" */
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--texto-titulo);
+}
+.cabecalho__titulo code {
+  font-size: 0.65em;
+  vertical-align: 0.15em;
+}
+
+.cabecalho__sublinhado {
+  text-decoration: underline;
+  text-decoration-thickness: 0.07em;
+  text-underline-offset: 0.12em;
+}
+.cabecalho__separador {
+  margin: 0 0.2em;
+}
+
+.cabecalho__data {
+  margin: 8px 0 0;
+  padding-left: 1.5rem;
+  color: var(--texto);
+}
+.cabecalho__data strong {
+  font-weight: 700;
+  color: var(--texto-titulo);
+}
+
+@media (max-width: 600px) {
+  .cabecalho__titulo { font-size: 1.5rem; padding-left: 0; }
+  .cabecalho__data { padding-left: 0; }
+}

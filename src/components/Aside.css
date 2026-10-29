@@ -1,0 +1,233 @@
+.sidebar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  min-width: 250px;
+  height: 100vh;
+  height: 100dvh;
+  padding: 24px 14px 16px;
+  background: var(--fundo-sidebar);
+  border-right: 1px solid var(--borda);
+  color: var(--texto-principal);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #1a1b1e transparent;
+}
+
+.sidebar-cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 8px 20px;
+}
+
+.sidebar-logo {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--superficie-hover);
+  font-size: 22px;
+}
+
+.sidebar-logo img {
+  width: 100%; height: 100%;
+}
+
+.sidebar-cabecalho h2 {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+}
+
+.sidebar-cabecalho p {
+  margin: 5px 0 0;
+  color: var(--texto-muted);
+  font-size: 12px;
+}
+
+.sidebar-divisor {
+  height: 1px;
+  background: var(--borda);
+  margin-bottom: 24px;
+}
+
+.sidebar-legenda {
+  padding: 0 10px;
+  margin: 0 0 10px;
+  color: var(--texto-muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.sidebar-navegacao {
+  flex: 1;
+}
+
+.sidebar-grupo {
+  margin-bottom: 5px;
+}
+
+.sidebar-historia {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.sidebar-historia:hover,
+.sidebar-historia.ativa {
+  background: var(--superficie-hover);
+}
+
+.sidebar-toggle,
+.sidebar-titulo-historia,
+.sidebar-capitulo {
+  border: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.sidebar-toggle {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 38px;
+  flex-shrink: 0;
+  background: transparent;
+  color: var(--texto-muted);
+}
+
+.sidebar-seta {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 1;
+  transform: rotate(0);
+  transition: transform 0.2s ease;
+}
+
+.sidebar-seta.aberta {
+  transform: rotate(90deg);
+}
+
+.sidebar-titulo-historia {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex: 1;
+  min-width: 0;
+  padding: 10px 8px 10px 0;
+  background: transparent;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sidebar-nome {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sidebar-capitulos {
+  margin: 4px 0 10px 22px;
+  padding-left: 10px;
+  border-left: 1px solid var(--borda);
+}
+
+.sidebar-capitulo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+  padding: 10px 8px;
+  margin: 2px 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--texto-secundario);
+  text-align: left;
+  font-size: 12px;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.sidebar-capitulo:hover {
+  color: var(--texto-principal);
+  background: var(--superficie-hover);
+}
+
+/* capítulo que está na tela agora */
+.sidebar-capitulo[aria-current="location"] {
+  color: var(--texto-principal);
+  background: var(--superficie-hover);
+}
+.sidebar-capitulo[aria-current="location"] .sidebar-capitulo-linha {
+  background: var(--blurple);
+}
+
+.sidebar-capitulo-linha {
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--texto-muted);
+}
+
+.sidebar-capitulo-emoji {
+  flex-shrink: 0;
+}
+
+.sidebar-rodape {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 8px 4px;
+  margin-top: 20px;
+  border-top: 1px solid var(--borda);
+  color: var(--texto-muted);
+  font-size: 11px;
+}
+
+.sidebar-status {
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #43b581;
+}
+
+@media (max-width: 760px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    max-height: 40vh;
+    max-height: 40dvh;
+    border-right: 0;
+    border-bottom: 1px solid var(--borda);
+  }
+
+  .sidebar-rodape {
+    display: none;
+  }
+}

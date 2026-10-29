@@ -1,0 +1,32 @@
+.capitulo {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25em;
+  margin: 40px 0 8px;
+  padding-left: 2.5rem; /* substitui os "ㅤㅤㅤㅤㅤ" */
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.375;
+  color: var(--texto-titulo);
+}
+.capitulo__marcador {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.capitulo__marcador code {
+  font-size: 0.7em;
+  vertical-align: 0.1em;
+}
+.capitulo__titulo {
+  min-width: 0;
+}
+/* o sublinhado da primeira letra */
+.capitulo__titulo::first-letter {
+  text-decoration: underline;
+  text-decoration-thickness: 0.07em;
+  text-underline-offset: 0.12em;
+}
+
+@media (max-width: 600px) {
+  .capitulo { padding-left: 0; font-size: 1.25rem; }
+}
