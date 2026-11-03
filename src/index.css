@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Square721';
+  src: url(fonts/square-721-bold-extended-bt.ttf);
+}
+
 :root {
   /* paleta do tema escuro do Discord */
   --fundo: #000;
@@ -56,7 +61,7 @@ code {
 
 /* ---------- layout ---------- */
 .app { display: flex; min-height: 100vh; }
-.conteudo { flex: 1; min-width: 0; }
+.conteudo { flex: 1; min-width: 0; position: relative;}
 .conteudo__coluna { max-width: 780px; margin: 0 auto; padding: 40px 40px 140px; }
 
 [data-nav] { scroll-margin-top: 24px; }
@@ -88,3 +93,13 @@ code {
 .conteudo p { margin: 8px 0; }
 .conteudo .sub { margin: 0; }
 .conteudo .sub + .sub { margin-top: 6px; }
+
+.titulos {
+  text-align: center;
+  color: #fff;
+  font-family: 'Square721'
+}
+
+.banner-ultimates {
+  width: 100%;
+}

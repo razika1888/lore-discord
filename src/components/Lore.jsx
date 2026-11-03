@@ -11,11 +11,16 @@ export default function Lore({ id }) {
     return null;
   }
 
+  // temporada = posição do lore em conteudo.js (0, 1, 2...), ou o número que você
+  // escrever em `temporada: N` dentro do próprio lore
+  const numero = lore.temporada ?? Object.keys(lores).indexOf(id);
+
   return (
     <>
       <Cabecalho
         emojiTitulo={lore.emojiTitulo}
         titulo={lore.titulo}
+        temporada={numero}
         data={lore.data}
         id={lore.id}
       />

@@ -20,7 +20,7 @@ export const lores = {
   "segunda-guerra": {
     emojiTitulo: "🐜",
     titulo: "A Segunda Guerra Mundial",
-    data: "Período da Segunda Guerra Mundial",
+    data: "1938-1945",
     capitulos: [
       {
         emoji: "💀",
@@ -147,9 +147,68 @@ export const lores = {
             paragrafos: [
               `A batalha final entre **ÁTOMO** e **OVERMAN** foi digna do espetáculo que foi o céu naquele dia. Todos os soldados pararam a guerra para ver a luta dos dois, a onde cada soco ecoava no céu e espalhava as nuvens. Depois de uma luta brutal, Átomo com seu traje rasgado e com poucas energias, concentrou toda sua força em um soco, e com a última gota de esperança, socou o rosto do Overman, o arremessando contra o chão, Átomo caiu em cima dele e continuou socando ele, até que ouviu com sua super-audição que o coração do Overman já não batia mais... **A Sociedade venceu**.`
             ]
+          },
+          {
+            tipo: "imagem",
+            src: "/img/sociedade-banner.png"
           }
         ]
       }
     ],
   },
+  "primeira-season": {
+    emojiTitulo: "🐜",
+    titulo: "A Fundação Lázaro",
+    data: "03/10/2025",
+    capitulos: [
+      {
+        emoji: "📖",
+        titulo: "𝐏𝐘𝐌capitulação",
+        blocos: [
+          {
+            tipo: "citacao",
+            paragrafos: [
+              `Estamos na... Era **Moderna**. A **Era de Ouro** passou por completo, junto da **Era de Prata** e a **Era de Bronze**. Mas, precisamos nos antenar nas notícias. Depois do final da **Segunda Guerra Mundial**, a Sociedade continuou. O grupo estava completo... Exceto por **STEVE ROGERS**, o **CAPITÃO AMÉRICA** que estava congelado e **TOM BAKER** que havia desaparecido após uma explosão de um míssel **no Ártico**. Mas o restante do grupo seguiu. **HYPOLITA** retornou para **THEMYSCIRA** depois da guerra junto de **CONNOR**, seu marido. **NATHAN MART** se casou com **DINAH VOSS**, atuando ao lado dela nas regiões de **MANNHATHAN**. **ARTHUR THOMPSON** retornou para **IVY TOWN** e continuou sua atuação como Átomo, se casando alguns anos depois. E mais alguns membros chegaram, o ferreiro **MICHAEL SCOTT**, conhecido como **LANTERNA VERDE**, que atuava em **GOTHAM CITY**, o professor **PETER J. HOLT**, conhecido como **JETSTRIDE**, que atuava em **KEYSTONE CITY** e outros como **STARMAN**, **GAVIÃO NEGRO** e **MULHER GAVIÃO**.`
+            ],
+          },
+          {
+            tipo: "texto",
+            texto: `# A ERA DE OURO`,
+          },
+          {
+            tipo: "imagem",
+            src: "https://i.ytimg.com/vi/DoP4oR1LRw8/maxresdefault.jpg"
+          },
+          {
+            tipo: "texto",
+            texto: `# A ERA DE PRATA`,
+          },
+          {
+            tipo: "citacao",
+            paragrafos: [
+              `Depois da **Era de Ouro**, temos a **Era de Prata**, que contou com a continuação do legado desses heróis que foram lendários. Para constar, os heróis da Era de Ouro lutaram contra ameaças de nível **galáxia**, sendo reconhecidos mundialmente por seus esforços. Mas para a Era de Prata tivemos a **Ascensão Mutante** na Terra, a chegada dos **Inumanos**, e a constituição da segunda geração da **Sociedade da Justiça**, que continha membros originais e outros como **STARGIRL**, **MOONGIRL**, **IRRADION** e até mesmo heróis solo como **HYPERION** e **MARVEL AZUL** (que nunca se derão muito bem...).`
+            ]
+          },
+          {
+            tipo: "imagem",
+            src: "https://farofeiros.com.br/wp-content/uploads/2018/11/Esquadr%C3%A3o-Supremo-da-Am%C3%A9rica-Vingadores-Avengers-10-Blog-Farofeiros-04.jpg"
+          },
+          {
+            tipo: "texto",
+            texto: `# A ERA DE BRONZE`
+          },
+          {
+            tipo: "citacao",
+            paragrafos: [
+              `E por fim, a geração mais próxima de nós, a **ERA DE BRONZE**. Nesta era pouco se é glamurizado pois o mundo estava num estado de "paz" depois de muitos conflitos nas eras antigas. Nesta geração, os nomes mais notáveis são: **ESMAGA ÁTOMO**, **ÁTOMO ⅠⅠ**, **HOMEM-BORRACHA**, **MOTOQUEIRO FANTASMA**, **CAPITÃO BRITÂNIA** e **SENHOR FANTÁSTICO**. Os maiores feitos dessa geração foram continuar o estado de paz da Terra, entretanto a maior ameaça que enfrentaram juntos foi a corrupção do **LANTERNA VERDE** Dylan O'Riley que se tornou o **PARALLAX** e causou perturbações por completo na Terra.`
+            ]
+          },
+          {
+            tipo: "imagem",
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPTR9nePHE9XxW9eDflxUAuIdx_3Xhfq9CJMk4--eYTn6NVXkdxqq8mdoJ&s=10",
+          }
+        ]
+      }
+    ]
+  }
 };

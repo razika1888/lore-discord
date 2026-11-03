@@ -24,6 +24,7 @@ export default function App() {
       <main className="conteudo" ref={conteudoRef}>
         <div className="conteudo__coluna">
           <Lore id="segunda-guerra" />
+          <Lore id="primeira-season" />
         </div>
       </main>
     </div>

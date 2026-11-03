@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import "./Aside.css";
 
-import logoFormiga from '../../public/formiga.svg' 
+import logoFormiga from '/formiga.svg' 
 
 /**
  * Lê a página e monta a árvore sozinho:
