@@ -1,0 +1,68 @@
+.capitulo,
+.capitulo__botao {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.capitulo {
+  margin: 46px 0 10px;
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-variation-settings: "SOFT" 100, "WONK" 1;
+  color: var(--texto);
+}
+
+.capitulo::after {
+  content: "";
+  flex: 1;
+  min-width: 24px;
+  height: 0;
+  border-top: 2px dashed rgba(243, 232, 208, 0.35);
+}
+
+.capitulo__botao {
+  text-align: left;
+}
+
+.capitulo__selo,
+.subtrama__selo {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  font-size: 22px;
+  background: #000;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1.5px var(--acento), 0 0 18px var(--brilho);
+}
+
+.capitulo__titulo { min-width: 0; }
+
+.capitulo__seta {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  border-radius: 50%;
+  border: 1.5px solid var(--acento);
+  color: var(--acento-luz);
+  transition: transform .2s ease, background .2s ease;
+}
+
+.capitulo__botao:hover .capitulo__seta {
+  background: var(--suave);
+}
+
+.capitulo__botao[aria-expanded="true"] .capitulo__seta {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 600px) {
+  .capitulo {
+    font-size: 1.3rem;
+  }
+}

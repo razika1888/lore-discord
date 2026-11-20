@@ -1,0 +1,107 @@
+.cabecalho {
+  margin: 0 0 30px;
+}
+
+.cabecalho__cartao {
+  position: relative;
+  overflow: hidden;
+  padding: 36px 38px 34px;
+  border-radius: 30px;
+  color: var(--texto);
+  border: 1.5px solid var(--acento);
+  background:
+    radial-gradient(circle at 92% 0, var(--brilho), transparent 55%),
+    repeating-conic-gradient(from 0deg at 92% 0, rgba(255, 255, 255, .04) 0 5deg, transparent 5deg 10deg),
+    linear-gradient(160deg, var(--acento-escuro), #08090d 72%);
+  box-shadow: 0 0 44px -10px var(--brilho);
+}
+
+.cabecalho__cartao::before {
+  content: "";
+  position: absolute;
+  inset: 9px;
+  border: 1px solid var(--suave);
+  border-radius: 22px;
+  pointer-events: none;
+}
+
+.cabecalho__cartao::after {
+  content: "";
+  position: absolute;
+  right: -70px;
+  top: -34px;
+  width: 320px;
+  height: 150px;
+  border: 1.5px solid var(--acento);
+  opacity: .45;
+  border-radius: 50%;
+  transform: rotate(-24deg);
+  pointer-events: none;
+}
+
+.cabecalho__rotulo {
+  position: relative;
+  margin: 0 0 12px;
+  font: 600 .85rem var(--sans);
+  letter-spacing: .16em;
+  color: var(--acento-luz);
+}
+
+.cabecalho__titulo {
+  position: relative;
+  margin: 0;
+  max-width: 82%;
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 3.3rem);
+  line-height: 1.06;
+  font-variation-settings: "SOFT" 100, "WONK" 1;
+  text-shadow: .04em .05em 0 var(--acento-escuro), 0 0 32px var(--brilho);
+}
+
+.cabecalho__data {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: .6em;
+  margin: 22px 0 0;
+  padding: .4em 1.1em;
+  border: 1.5px solid var(--acento);
+  border-radius: 99px;
+  background: rgba(0, 0, 0, .45);
+  color: var(--acento-luz);
+  font: 600 .9rem var(--sans);
+  letter-spacing: .1em;
+}
+
+.cabecalho__emblema {
+  position: absolute;
+  right: 30px;
+  bottom: 26px;
+  display: grid;
+  place-items: center;
+  width: 66px;
+  height: 66px;
+  font-size: 30px;
+  background: #000;
+  border-radius: 50%;
+  transform: rotate(-8deg);
+  box-shadow: 0 0 0 2px var(--acento), 0 0 24px var(--brilho);
+}
+
+@media (max-width: 600px) {
+  .cabecalho__cartao {
+    padding: 28px 22px 26px;
+  }
+
+  .cabecalho__titulo {
+    max-width: 100%;
+  }
+
+  .cabecalho__emblema {
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+    right: 18px;
+    bottom: 18px;
+  }
+}

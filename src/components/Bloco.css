@@ -1,0 +1,91 @@
+.citacao {
+  margin: 16px 0; padding: 20px 26px; background: rgba(239, 231, 211, .035);
+  border: 1.5px solid var(--linha);
+  border-left: 7px solid var(--acento);
+  border-radius: 18px 24px 24px 18px;
+}
+
+.citacao .sub {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--texto-mudo);
+}
+
+.citacao .sub+.sub {
+  margin-top: 12px;
+}
+
+.citacao strong {
+  font-weight: 700;
+  color: var(--texto);
+  padding: 0 .1em;
+  background: linear-gradient(transparent 62%, var(--suave) 62%);
+}
+
+.imagem {
+  margin: 26px 0;
+}
+
+.imagem img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1.5px solid var(--acento);
+  box-shadow: 0 0 36px -10px var(--brilho);
+}
+
+.imagem figcaption {
+  margin-top: 14px;
+  text-align: center;
+  font: 500 .85rem var(--sans);
+  letter-spacing: .06em;
+  color: var(--texto-fraco);
+}
+
+.lista {
+  list-style: none;
+  margin: 12px 0;
+  padding: 0;
+}
+
+.lista li {
+  position: relative;
+  margin: 6px 0;
+  padding-left: 30px;
+  color: var(--texto-mudo);
+}
+
+.lista li::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: .5em;
+  width: 14px;
+  height: 14px;
+  background: var(--acento);
+  clip-path: var(--estrela);
+}
+
+.divisor {
+  position: relative;
+  height: 20px;
+  margin: 34px 0;
+  border: 0;
+  background: linear-gradient(var(--linha), var(--linha)) center / 100% 1.5px no-repeat;
+}
+
+.divisor::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  background: var(--acento, var(--amarelo));
+  clip-path: var(--estrela);
+  box-shadow: 0 0 0 8px var(--fundo);
+}

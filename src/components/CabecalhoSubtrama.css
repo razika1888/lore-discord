@@ -1,0 +1,47 @@
+.subtrama {
+    margin: 72px 0 14px;
+    padding-top: 28px;
+    border-top: 1.5px dashed var(--linha);
+}
+
+.subtrama__titulo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    margin: 0;
+    font-size: 1.9rem;
+    font-weight: 800;
+    line-height: 1.15;
+    font-variation-settings: "SOFT" 100, "WONK" 1;
+}
+
+.subtrama__numero {
+    padding: .35em .9em;
+    border-radius: 99px;
+    background: var(--acento);
+    color: #050507;
+    font: 700 .85rem var(--sans);
+    letter-spacing: .1em;
+    box-shadow: 0 0 20px var(--brilho);
+}
+
+.subtrama__data {
+    display: flex;
+    align-items: center;
+    gap: .6em;
+    margin: 12px 0 0;
+    font: 600 .9rem var(--sans);
+    letter-spacing: .08em;
+    color: var(--texto-fraco);
+}
+
+.subtrama__data .estrela {
+    color: var(--acento);
+}
+
+@media (max-width: 600px) {
+    .subtrama__titulo {
+        font-size: 1.4rem;
+    }
+}
